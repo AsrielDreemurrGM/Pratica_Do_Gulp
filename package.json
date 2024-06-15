@@ -147,6 +147,7 @@
     "yargs-parser": "^20.2.9"
   },
   "scripts": {
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
