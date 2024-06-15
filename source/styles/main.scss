@@ -1,0 +1,11 @@
+@use 'variaveis';
+@use 'reset';
+
+body {
+    background-color: variaveis.$corPrincipal;
+
+    header {
+        padding: 10vh;
+        background-color: variaveis.$corSecundaria;
+    }
+}
