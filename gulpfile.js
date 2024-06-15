@@ -20,3 +20,9 @@ function comprimeImagens() {
     .pipe(imagemin())
     .pipe(gulp.dest('./build/images'));
 }
+
+exports.default = function() {
+    gulp.watch('./source/styles/*.scss', {ignoreInitial:False}, gulp.series(compilaSass));
+    gulp.watch('./source/scripts/*.js', {ignoreInitial:False}, gulp.series(comprimeJS));
+    gulp.watch('./source/images/*', {ignoreInitial:False}, gulp.series(comprimeImagens));
+}
