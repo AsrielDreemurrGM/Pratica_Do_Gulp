@@ -14,3 +14,9 @@ function comprimeJS() {
     .pipe(uglify)
     .pipe(gulp.dest('./build/scripts'));
 }
+
+function comprimeImagens() {
+    return gulp.src('./source/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./build/images'));
+}
