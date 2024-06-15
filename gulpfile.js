@@ -8,3 +8,8 @@ function compilaSass() {
     .pipe(gulp.dest('./build/styles'));
 }
 
+function comprimeJS() {
+    return gulp.src('./source/scripts/*.js')
+    .pipe(uglify)
+    .pipe(gulp.dest('./build/scripts'));
+}
